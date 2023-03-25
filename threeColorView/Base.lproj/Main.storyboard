@@ -16,64 +16,113 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gQ-oY-ldO">
-                                <rect key="frame" x="16" y="59" width="355" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gQ-oY-ldO">
+                                <rect key="frame" x="16" y="79" width="361" height="107"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQC-Gl-65Z">
-                                <rect key="frame" x="16" y="226" width="51" height="20.333333333333343"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKu-xt-J15">
-                                <rect key="frame" x="16" y="275" width="51" height="20.333333333333314"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utL-vG-6zS">
-                                <rect key="frame" x="16" y="327" width="51" height="20.333333333333314"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="pdp-TY-g0W">
-                                <rect key="frame" x="123" y="221" width="250" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zk6-4D-Tab"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="RqV-RU-Jhi">
-                                <rect key="frame" x="123" y="322" width="250" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="zBW-m8-2o7"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="G4G-kP-n0S">
-                                <rect key="frame" x="123" y="270" width="250" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="5Iw-xF-4K0"/>
-                                </connections>
-                            </slider>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="3aS-Go-cJe">
+                                <rect key="frame" x="16" y="226" width="361" height="122"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="t3L-hJ-5ZV">
+                                        <rect key="frame" x="0.0" y="0.0" width="52.666666666666664" height="122"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQC-Gl-65Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="52.666666666666664" height="21.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKu-xt-J15">
+                                                <rect key="frame" x="0.0" y="50.333333333333314" width="52.666666666666664" height="21.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utL-vG-6zS">
+                                                <rect key="frame" x="0.0" y="100.66666666666669" width="52.666666666666664" height="21.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="aCX-8e-UzA">
+                                        <rect key="frame" x="59.666666666666671" y="0.0" width="43" height="122"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ja0-j3-GGL">
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eib-aG-X6k">
+                                                <rect key="frame" x="0.0" y="51.333333333333314" width="43" height="19.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOz-eU-p7Q">
+                                                <rect key="frame" x="0.0" y="102.66666666666669" width="43" height="19.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="43" id="1OF-D3-ALt"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7eU-gs-3ET">
+                                        <rect key="frame" x="109.66666666666667" y="0.0" width="251.33333333333331" height="122"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="pdp-TY-g0W">
+                                                <rect key="frame" x="-2" y="0.0" width="255.33333333333334" height="31"/>
+                                                <connections>
+                                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zk6-4D-Tab"/>
+                                                </connections>
+                                            </slider>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="G4G-kP-n0S">
+                                                <rect key="frame" x="-2" y="46" width="255.33333333333334" height="31"/>
+                                                <connections>
+                                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="5Iw-xF-4K0"/>
+                                                </connections>
+                                            </slider>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="RqV-RU-Jhi">
+                                                <rect key="frame" x="-2" y="92" width="255.33333333333334" height="31"/>
+                                                <connections>
+                                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="zBW-m8-2o7"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="t3L-hJ-5ZV" firstAttribute="width" secondItem="3aS-Go-cJe" secondAttribute="width" multiplier="0.15" constant="-1.5572519083969425" id="Yuc-NM-zSJ"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8gQ-oY-ldO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7QK-YP-ugR"/>
+                            <constraint firstItem="8gQ-oY-ldO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="GQ9-UF-yOd"/>
+                            <constraint firstItem="3aS-Go-cJe" firstAttribute="top" secondItem="8gQ-oY-ldO" secondAttribute="bottom" constant="40" id="Im4-tu-aUE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3aS-Go-cJe" secondAttribute="bottom" constant="470" id="JRb-Xc-we9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8gQ-oY-ldO" secondAttribute="trailing" constant="16" id="KHy-4K-3VX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3aS-Go-cJe" secondAttribute="trailing" constant="16" id="bYm-8d-h3c"/>
+                            <constraint firstItem="3aS-Go-cJe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fCB-2o-7kv"/>
+                            <constraint firstItem="8gQ-oY-ldO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gTI-8N-mPc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8gQ-oY-ldO" secondAttribute="trailing" constant="16" id="pv2-Yh-q5o"/>
+                            <constraint firstItem="8gQ-oY-ldO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="zWO-a7-GMO"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueLabel" destination="utL-vG-6zS" id="6eK-IK-Tat"/>
+                        <outlet property="blueLabel" destination="YOz-eU-p7Q" id="gjG-WA-ts7"/>
                         <outlet property="blueSlider" destination="RqV-RU-Jhi" id="KDx-g7-Z8l"/>
                         <outlet property="colorView" destination="8gQ-oY-ldO" id="f5L-JT-GbE"/>
-                        <outlet property="greenLabel" destination="lKu-xt-J15" id="8tF-Cf-kau"/>
+                        <outlet property="greenLabel" destination="eib-aG-X6k" id="7UD-gI-Rqs"/>
                         <outlet property="greenSlider" destination="G4G-kP-n0S" id="06u-53-aUB"/>
-                        <outlet property="redLabel" destination="zQC-Gl-65Z" id="oe8-YX-7jl"/>
+                        <outlet property="redLabel" destination="ja0-j3-GGL" id="b6o-Ox-8W3"/>
                         <outlet property="redSlider" destination="pdp-TY-g0W" id="7GJ-Rz-8RG"/>
                     </connections>
                 </viewController>

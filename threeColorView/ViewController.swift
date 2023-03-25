@@ -20,8 +20,7 @@ class ViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
           
-            //colorView.layer.cornerRadius = 3
-            //colorView.backgroundColor = UIColor.black
+            colorView.layer.cornerRadius = 12
             redSlider.value = 0.0
             greenSlider.value = 0.0
             blueSlider.value = 0.0
