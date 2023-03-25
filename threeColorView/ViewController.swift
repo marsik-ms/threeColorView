@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             case blueSlider:
                 blueLabel.text = "\(Int(sender.value))"
             default:
-                break
+                break   //на уроке вы сказали что вместо дефолт можно просто последний кейс вписать. Это и нужно было сделать?
             }
         }
 
